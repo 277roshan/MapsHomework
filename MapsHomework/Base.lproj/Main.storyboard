@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapsHomework" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="e2S-3y-teF">
+                                <rect key="frame" x="0.0" y="74" width="600" height="526"/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bQB-9X-dWO">
+                                <rect key="frame" x="28" y="6" width="441" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFr-Fx-bWH">
+                                <rect key="frame" x="477" y="6" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="eeL-et-lnN"/>
+                                </constraints>
+                                <state key="normal" title="Go"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bQB-9X-dWO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Cch-dE-VU7"/>
+                            <constraint firstItem="bQB-9X-dWO" firstAttribute="top" secondItem="LFr-Fx-bWH" secondAttribute="top" id="PJi-ND-IwQ"/>
+                            <constraint firstAttribute="trailing" secondItem="e2S-3y-teF" secondAttribute="trailing" id="RQe-uV-T2y"/>
+                            <constraint firstItem="LFr-Fx-bWH" firstAttribute="leading" secondItem="bQB-9X-dWO" secondAttribute="trailing" constant="8" symbolic="YES" id="UCh-a6-YiN"/>
+                            <constraint firstItem="bQB-9X-dWO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="6" id="XvW-uN-e7P"/>
+                            <constraint firstItem="e2S-3y-teF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kK6-dD-Xp8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LFr-Fx-bWH" secondAttribute="trailing" constant="73" id="ouw-cO-4tR"/>
+                            <constraint firstItem="e2S-3y-teF" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="rB8-Bc-mOq"/>
+                            <constraint firstItem="e2S-3y-teF" firstAttribute="top" secondItem="LFr-Fx-bWH" secondAttribute="bottom" constant="38" id="rod-1K-Yvf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MapViewOutlet" destination="e2S-3y-teF" id="wjl-5A-Hnc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="337"/>
+        </scene>
+    </scenes>
+</document>
